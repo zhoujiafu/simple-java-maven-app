@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'registry.cn-hangzhou.aliyuncs.com/kennylee/maven:latest'
-            args '-v //home/docker/.m2:/root/.m2'
+            args '-v /home/docker/.m2:/root/.m2'
         }
     }
     stages {
